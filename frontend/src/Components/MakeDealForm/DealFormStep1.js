@@ -79,7 +79,7 @@ function MakeDealFormItem(props) {
                 }
             </FormControl>
             <VStack w="full" h="full" pt={20} spacing={10} alignItems="flex-start">
-                <Button colorScheme='blue' w='320px' onClick={props.nextStep}>Continue to investment constraints</Button>
+                <Button colorScheme='purple' w='320px' onClick={props.nextStep}>Continue to investment constraints</Button>
             </VStack>
         </GridItem>
     )
