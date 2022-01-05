@@ -4,8 +4,7 @@ import AccountView from './Components/AccountView'
 import MakeDealForm from './Components/MakeDealForm'
 import Nav from './Components/Nav'
 import {BrowserRouter as Router, Switch, Route, withRouter} from 'react-router-dom'
-import { ChakraProvider, extendTheme  } from '@chakra-ui/react'
-import { StepsStyleConfig as Steps } from 'chakra-ui-steps';
+import { ChakraProvider, theme  } from '@chakra-ui/react'
 
 import DealDetailsView from './Components/DealDetailsView'
 import PrivateRoute from "./Utils/PrivateRoute"
@@ -13,14 +12,7 @@ import {AuthProvider} from "./Context/AuthContext"
 import LoginView from "./Components/LoginView"
 import HomeView from "./Components/HomeView"
 
-const theme = extendTheme({
-  components: {
-    Steps,
-  },
-});
-
 function App() {
-
   return (
     <AuthProvider>
       <div className="App">
