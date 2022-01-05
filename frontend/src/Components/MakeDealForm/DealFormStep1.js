@@ -15,12 +15,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 function DealFormStep1(props) {
-    const newDate = new Date();
-    // Set default deadline to be a week
-    newDate.setDate(newDate.getDate() + 7);    
-    const [startDate, setStartDate] = useState(newDate);
     const [dealData, setDealData] = useState(Deal.empty());
-    dealData.investmentDeadline = startDate
 
     const formatInput = (event) => {
         const attribute = event.target.getAttribute('name')
