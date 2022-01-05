@@ -34,14 +34,8 @@ import DealFormStep2 from './DealFormStep2';
 import StepsComponent from './StepsComponent';
 
 function MakeDealForm(props) {
-    const newDate = new Date();
-
-    // Set default deadline to be a week
-    newDate.setDate(newDate.getDate() + 7);    
-    const [startDate, setStartDate] = useState(newDate);
     // This is doubling as the display variable so 'none' is the only valid default value
     const [dealData, setDealData] = useState(Deal.empty());
-    dealData.investmentDeadline = startDate    
     const [activeStep, setActiveStep] = useState(1);
 
     const logined = true;
